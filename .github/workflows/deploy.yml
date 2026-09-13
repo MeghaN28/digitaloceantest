@@ -23,7 +23,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -q
+          python -m pytest -q
 
       - name: Deploy to DigitalOcean App Platform
         if: github.ref == 'refs/heads/main'
